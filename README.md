@@ -1,4 +1,4 @@
-# Pipeline v2: proveniência de dados no DATATRAN (acidentes2017-2025_todas_causas_tipos)
+# Proveniência de dados no DATATRAN (acidentes2017-2025_todas_causas_tipos)
 
 Ordem de execução (já feitas: 01, 02, 02b):
 1. `python 03_duplicatas.py --refazer`   Etapa 2: duplicatas exatas (linha idêntica)
