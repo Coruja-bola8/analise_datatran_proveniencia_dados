@@ -1,0 +1,28 @@
+campo,token,n,pct
+pesid,NA,387143,9.511
+br,NA,10098,0.248
+km,NA,10098,0.248
+tipo_acidente,<NULL de verdade>,96,0.002
+classificacao_acidente,NA,123,0.003
+sentido_via,NÃO INFORMADO,10098,0.248
+condicao_metereologica,IGNORADO,47816,1.175
+id_veiculo,NA,144991,3.562
+tipo_veiculo,NA,144991,3.562
+ano_fabricacao_veiculo,NA,144991,3.562
+tipo_envolvido,NA,387143,9.511
+estado_fisico,NA,387143,9.511
+estado_fisico,NÃO INFORMADO,240909,5.918
+idade,NA,740610,18.194
+sexo,IGNORADO,12999,0.319
+sexo,NA,387143,9.511
+sexo,NÃO INFORMADO,243138,5.973
+ilesos,NA,387143,9.511
+feridos_leves,NA,387143,9.511
+feridos_graves,NA,387143,9.511
+mortos,NA,387143,9.511
+regional,N/A,84,0.002
+regional,NA,298,0.007
+delegacia,N/A,1609,0.04
+delegacia,NA,298,0.007
+uop,N/A,2900,0.071
+uop,NA,298,0.007

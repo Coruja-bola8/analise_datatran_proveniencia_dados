@@ -1,0 +1,13 @@
+periodo,granularidade,n
+2017-2024,linhas do arquivo,3486585
+2017-2024,ids de acidente distintos,560187
+2017-2024,pesid distintos,1332102
+2017-2024,"(id, pesid) distintos",1414758
+2017-2024,"(id, pesid, id_veiculo) distintos",1459579
+2017-2024,"(id, id_veiculo) distintos",1097798
+2017-2025,linhas do arquivo,4070595
+2017-2025,ids de acidente distintos,632716
+2017-2025,pesid distintos,1509581
+2017-2025,"(id, pesid) distintos",1603104
+2017-2025,"(id, pesid, id_veiculo) distintos",1654208
+2017-2025,"(id, id_veiculo) distintos",1242720

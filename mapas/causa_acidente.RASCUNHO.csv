@@ -1,0 +1,8 @@
+variante,canonico,confianca,observacao
+INGESTAO DE ALCOOL,INGESTAO DE ALCOOL PELO CONDUTOR,alta,original: Ingestão de Álcool -> Ingestão de álcool pelo condutor
+INGESTAO DE SUBSTANCIAS PSICOATIVAS,INGESTAO DE SUBSTANCIAS PSICOATIVAS PELO CONDUTOR,alta,original: Ingestão de Substâncias Psicoativas -> Ingestão de substâncias psicoativas pelo condutor
+MAL SUBITO,MAL SUBITO DO CONDUTOR,alta,original: Mal Súbito -> Mal súbito do condutor
+INGESTAO DE ALCOOL E/OU SUBSTANCIAS PSICOATIVAS PELO PEDESTRE,INGESTAO DE ALCOOL OU DE SUBSTANCIAS PSICOATIVAS PELO PEDESTRE,alta,original: Ingestão de álcool e/ou substâncias psicoativas pelo pedestre -> Ingestão de álcool ou de substâncias psicoativas pelo pedestre
+PEDESTRE - INGESTAO DE ALCOOL/ SUBSTANCIAS PSICOATIVAS,INGESTAO DE ALCOOL OU DE SUBSTANCIAS PSICOATIVAS PELO PEDESTRE,alta,original: Pedestre - Ingestão de álcool/ substâncias psicoativas -> Ingestão de álcool ou de substâncias psicoativas pelo pedestre
+DEFICIENCIA DO SISTEMA DE ILUMINACAO/SINALIZACAO,DEFICIENCIA OU NAO ACIONAMENTO DO SISTEMA DE ILUMINACAO/SINALIZACAO DO VEICULO,media,original: Deficiência do Sistema de Iluminação/Sinalização -> Deficiência ou não Acionamento do Sistema de Iluminação/Sinalização do Veículo
+CONDUTOR DEIXOU DE MANTER DISTANCIA DO VEICULO DA FRENTE,NAO GUARDAR DISTANCIA DE SEGURANCA,media,original: Condutor deixou de manter distância do veículo da frente -> Não guardar distância de segurança
