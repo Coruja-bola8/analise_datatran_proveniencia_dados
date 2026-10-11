@@ -1,0 +1,5 @@
+O Instituto Brasileiro de Geografia e Estatística (IBGE) informa aos usuários que, antes de acessar ou utilizar qualquer arquivo relacionado à Malha Municipal Digital – MMD, é imprescindível a leitura da Nota Metodológica “Informações técnicas e legais para a utilização dos dados publicados”, correspondente à versão vigente.
+A Nota Metodológica encontra-se disponível na seção “Publicações”, no item “Malha Municipal”, acessível por meio do portal do IBGE:
+<https://www.ibge.gov.br/geociencias/organizacao-do-territorio/malhas-territoriais.html>
+Ao realizar o acesso ou download de qualquer arquivo referente à MMD, o usuário terá contato integral com o documento supracitado. Dessa forma, considera-se que o usuário está plenamente ciente de seu conteúdo, concordando automaticamente com as condições, limitações de uso e demais parâmetros técnicos e legais apresentados. O IBGE fica isento de quaisquer alegações de desconhecimento dessas informações.
+Ressalta-se que a presente publicação (versão 2025) substitui integralmente as versões anteriores das Notas Metodológicas, exceto no que diz respeito aos aspectos técnicos específicos de cada edição.
