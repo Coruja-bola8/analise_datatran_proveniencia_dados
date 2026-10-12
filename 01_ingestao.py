@@ -7,7 +7,7 @@ import sys
 import pandas as pd
 from sqlalchemy import create_engine, text
 
-from config import *
+from config import DB_URL, DIR_CSV, PADRAO_ARQUIVO, URL_POR_ANO, ANOS
 from prov import abrir_atividade, fechar_atividade, entidade, sha256_arquivo
 
 ETAPA = "E0_ingestao"
