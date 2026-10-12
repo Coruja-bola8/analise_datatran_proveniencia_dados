@@ -6,6 +6,8 @@ from sqlalchemy import create_engine, text
 from config import *
 from params import *
 from prov import colunas_publicadas
+from config import DB_URL, DIR_SAIDA, DIR_MAPAS, CAMPOS_PADRONIZAR, CAMPOS_CONJUNTO
+
 
 pd.set_option("display.width", 250, "display.max_rows", 500, "display.max_columns", 50)
 saida = []
