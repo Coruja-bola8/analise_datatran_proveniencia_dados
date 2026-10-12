@@ -2,24 +2,25 @@
 Responde: (A) qual granularidade reproduz os números do TCC; (B) quais textos representam ausência
 (ex.: 'NA'); (C) qualidade das coordenadas por ano; (D) consistência de atributos dentro do mesmo id.
 Salve em datatran_prov/ e rode: python 02b_investigacao.py  (resultados também em saida/)."""
+import os
 import pandas as pd
 from sqlalchemy import create_engine, text
-
-from config import *
+from config import DB_URL, DIR_SAIDA
+from params import LAT_LIM, LON_LIM, CHAVE_PONTO, CAMPOS_PADRONIZAR, CAMPOS_CONJUNTO, DIR_MAPAS
 from prov import colunas_publicadas
+from dotenv import load_dotenv
+
+load_dotenv()
 
 pd.set_option("display.width", 250, "display.max_rows", 300, "display.max_columns", 50)
 DIR_SAIDA.mkdir(exist_ok=True)
 eng = create_engine(DB_URL)
 
-
 def q(conn, sql, **p):
     return pd.read_sql(text(sql), conn, params=p)
 
-
 def escalar(conn, sql):
     return conn.execute(text(sql)).scalar()
-
 
 with eng.connect() as conn:
     cols = colunas_publicadas(conn)
