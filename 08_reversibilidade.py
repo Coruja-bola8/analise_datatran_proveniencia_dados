@@ -5,12 +5,7 @@ Desfaz as etapas na ordem inversa:
   E3: primeira modificação de (rid, campo) guarda o valor que veio da tabela primária."""
 from sqlalchemy import create_engine, text
 from config import *
-from params import *
 from prov import colunas_publicadas
-import os
-
-from config import DB_URL, DIR_SAIDA, DIR_MAPAS, CAMPOS_PADRONIZAR, CAMPOS_CONJUNTO
-
 
 E3 = "('token_ausencia_para_nulo', 'categoria_ignorado', 'mediana_por_chave')"
 
