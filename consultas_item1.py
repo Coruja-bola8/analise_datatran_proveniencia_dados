@@ -27,9 +27,25 @@ CONSULTAS = {
                count(*) FILTER (WHERE fusao) AS pares_fusao,
                sum(n_celulas) FILTER (WHERE fusao) AS celulas_fusao
         FROM prov.transformacao_valor GROUP BY 1 ORDER BY 1""",
-    "regitro_modificacao": """
+    "D_regitro_modificacao": """
         SELECT pg_size_pretty(pg_total_relation_size('prov.modificacao'));"""
-}
+    "F_candidadotos_duplicatas"
+        WITH g AS (
+        SELECT data_inversa, horario, km, br, uf,
+        count(DISTINCT id) AS n_ids,
+        count(DISTINCT latitude || '|' || longitude) AS n_coord
+        FROM raw.datatran_primario
+        WHERE upper(trim(br)) NOT IN ('NA','N/A') AND upper(trim(km)) NOT IN ('NA','N/A')
+        ROUP BY 1,2,3,4,5
+        HAVING count(DISTINCT id) > 1)
+        SELECT count(*) AS grupos, sum(n_ids) AS acidentes,
+        count(*) FILTER (WHERE n_coord = 1) AS grupos_com_mesma_coordenada
+        FROM g; 
+    "G_versoes_banco": """
+        SELECT version() AS postgres, postgis_full_version() AS postgis""",
+    "H_extensoes": """
+        SELECT extname, extversion FROM pg_extension ORDER BY 1""",
+    }
 
 DIR_SAIDA.mkdir(exist_ok=True)
 
