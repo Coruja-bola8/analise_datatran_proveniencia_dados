@@ -21,3 +21,11 @@ Ordem de execução:
 Para refazer desde a Etapa 4: `python 03_duplicatas.py --refazer` (apaga o log das etapas 2-5).
 `params.py` sobrescreve parâmetros do `config.py`. O `config.py` continua com DB_URL, ANOS, PADRAO_ARQUIVO e caminhos IBGE/DNIT.
 `mapas/causa_acidente.RASCUNHO.csv` é uma PROPOSTA a ser revisada pelo grupo; renomeie para `causa_acidente.csv` para aplicá-la.
+
+DADOS
+Hashes das bases auxiliares completos (SHA-256)
+Arquivo	          SHA-256
+BR_UF_2025.shp	  23A9B54FC2DBFBE46298D3152ED4CCFDB60F9E7F178B00C50526741ECBE142D7
+BR_UF_2025.dbf	  4AAB0C0312C79F20D42ABF1FC4F3FBF6565CDA03E288FD82B033ECE18A018AF6
+SNV_202607A.shp	  1247033F6234D44BBAE0F679167A187ED0D52ACE86F57196C3FC4E1445D534DB
+SNV_202607A.dbf	  CF10B04114872670EC385243B2D6D65DEC8978B4A72E8368CE48EDBA4F95CEB0
