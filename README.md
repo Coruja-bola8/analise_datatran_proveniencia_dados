@@ -11,12 +11,13 @@ Ordem de execução:
 1. Faça o download da malha rodoviária no site do IBGE e DNIT (IBGE, edição 2025; DNIT, versão SNV_202607A) e cole na pasta datatran_prov\dados\aux -
 2. Faça o download dos dados abertos da PRF pelo portal https://www.gov.br/prf/pt-br/acesso-a-informacao/dados-abertos/dados-abertos-da-prf
 3. Selecione os anos que serão analisados e cole todos arquivos na pasta datatran_prov\dados\csv
-4. `python 03_duplicatas.py --refazer`   Etapa 2: duplicatas exatas (linha idêntica)
-5. `python 04_ausentes.py`               Etapa 3: 'NA'/'N/A' -> NULL; imputação de coordenadas (se houver ausência); 'Ignorado'
-6. `python 05_padronizacao.py`           Etapa 4: padronização (+ mapas/<campo>.csv, opcional)
-7. `python 06_validacao_geo.py`          Etapa 5: validação + clean.acidente (precisa de dados/aux: IBGE e DNIT)
-8. `python 07_resultados.py`             números do Capítulo 4 -> saida/resultados_cap4.md
-9. `python 08_reversibilidade.py`        teste empírico de reversibilidade
+4. `01_ingestao.py`                      Etapa 1: inserir os dados
+5. `python 03_duplicatas.py --refazer`   Etapa 2: duplicatas exatas (linha idêntica)
+6. `python 04_ausentes.py`               Etapa 3: 'NA'/'N/A' -> NULL; imputação de coordenadas (se houver ausência); 'Ignorado'
+7. `python 05_padronizacao.py`           Etapa 4: padronização (+ mapas/<campo>.csv, opcional)
+8. `python 06_validacao_geo.py`          Etapa 5: validação + clean.acidente (precisa de dados/aux: IBGE e DNIT)
+9. `python 07_resultados.py`             números do Capítulo 4 -> saida/resultados_cap4.md
+10. `python 08_reversibilidade.py`        teste empírico de reversibilidade
 
 Para refazer desde a Etapa 4: `python 03_duplicatas.py --refazer` (apaga o log das etapas 2-5).
 `params.py` sobrescreve parâmetros do `config.py`. O `config.py` continua com DB_URL, ANOS, PADRAO_ARQUIVO e caminhos IBGE/DNIT.
