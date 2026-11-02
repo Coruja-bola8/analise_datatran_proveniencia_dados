@@ -8,7 +8,7 @@ As credenciais do banco ficam em um arquivo .env fora do repositório. Os dados 
 Antes de iniciar configure seu usuario e senha Postgre
 Crie o arquivo .env usando o .env.example como modelo e use suas credenciais do banco de dados Postgre.
 Ordem de execução:
-1. Faça o download da malha rodoviária no site do DNIT e cole na pasta datatran_prov\dados\aux
+1. Faça o download da malha rodoviária no site do IBGE e DNIT (IBGE, edição 2025; DNIT, versão SNV_202607A) e cole na pasta datatran_prov\dados\aux -
 2. Faça o download dos dados abertos da PRF pelo portal https://www.gov.br/prf/pt-br/acesso-a-informacao/dados-abertos/dados-abertos-da-prf
 3. Selecione os anos que serão analisados e cole todos arquivos na pasta datatran_prov\dados\csv
 4. `python 03_duplicatas.py --refazer`   Etapa 2: duplicatas exatas (linha idêntica)
