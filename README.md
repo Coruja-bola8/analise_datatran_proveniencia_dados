@@ -1,4 +1,9 @@
 # Proveniência de dados no DATATRAN (acidentes2017-2025_todas_causas_tipos)
+O repositório reúne os scripts numerados na ordem de execução, o esquema SQL, os arquivos de parâmetros, a lista de dependências com versões.
+
+Para reproduzir o trabalho, criam-se o banco e o esquema, obtêm-se os nove arquivos anuais e as duas bases auxiliares, conferem-se as somas SHA-256 dos arquivos anuais com a Tabela 1 e executam-se os scripts na ordem deste README.
+
+As credenciais do banco ficam em um arquivo .env fora do repositório. Os dados e as bases auxiliares não são distribuídos no repositório.
 
 Antes de iniciar configure seu usuario e senha Postgre
 Crie o arquivo .env usando o .env.example como modelo e use suas credenciais do banco de dados Postgre.
