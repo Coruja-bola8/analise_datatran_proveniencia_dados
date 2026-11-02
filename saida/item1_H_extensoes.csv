@@ -1,0 +1,4 @@
+extname,extversion
+plpgsql,1.0
+postgis,3.6.2
+unaccent,1.1

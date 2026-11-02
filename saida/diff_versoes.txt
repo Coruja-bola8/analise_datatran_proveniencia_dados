@@ -1,0 +1,58 @@
+##### 03_duplicatas.py: 1 linhas diferentes
+--- EXECUTADA/03_duplicatas.py
++++ LOCAL/03_duplicatas.py
+@@ -9,2 +9,3 @@
+ from prov import abrir_atividade, fechar_atividade, colunas_publicadas
++from config import DB_URL, DIR_SAIDA, DIR_MAPAS, CAMPOS_PADRONIZAR, CAMPOS_CONJUNTO
+ 
+##### 04_ausentes.py: 2 linhas diferentes
+--- EXECUTADA/04_ausentes.py
++++ LOCAL/04_ausentes.py
+@@ -10,2 +10,4 @@
+ from prov import abrir_atividade, fechar_atividade, colunas_publicadas, exigir_nao_executada
++from config import DB_URL, DIR_SAIDA, DIR_MAPAS, CAMPOS_PADRONIZAR, CAMPOS_CONJUNTO
++
+ 
+##### 05_padronizacao.py: 9 linhas diferentes
+--- EXECUTADA/05_padronizacao.py
++++ LOCAL/05_padronizacao.py
+@@ -13,2 +13,3 @@
+ from sqlalchemy import create_engine, text
++from params import *
+ from config import *
+@@ -16,2 +17,8 @@
+ from prov import abrir_atividade, fechar_atividade, colunas_publicadas, exigir_nao_executada
++from dotenv import load_dotenv
++import os
++
++from config import DB_URL, DIR_SAIDA, DIR_MAPAS, CAMPOS_PADRONIZAR, CAMPOS_CONJUNTO
++
++
+ 
+@@ -39,4 +46,4 @@
+ 
+-
+ def main():
++    load_dotenv()
+     DIR_SAIDA.mkdir(exist_ok=True)
+##### 06_validacao_geo.py: 9 linhas diferentes
+--- EXECUTADA/06_validacao_geo.py
++++ LOCAL/06_validacao_geo.py
+@@ -4,2 +4,3 @@
+ import json
++import os
+ from pathlib import Path
+@@ -7,2 +8,3 @@
+ import pandas as pd
++from dotenv import load_dotenv
+ from sqlalchemy import create_engine, text
+@@ -34,2 +36,9 @@
+ 
++# ==============================================================================
++# CONFIGURAÇÃO SEGURA DO BANCO DE DADOS (VIA VARIÁVEIS DE AMBIENTE)
++# ==============================================================================
++# 1. Carrega as variáveis do arquivo .env local
++load_dotenv()
++# 2. Monta a URL de conexão com o banco de dados usando as variáveis de ambiente
++DB_URL = f"postgresql://{os.getenv('DB_USER')}:{os.getenv('DB_PASSWORD')}@{os.getenv('DB_HOST', 'localhost')}:{os.getenv('DB_PORT', '5432')}/{os.getenv('DB_NAME')}"
+ 
